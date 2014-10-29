@@ -1,0 +1,106 @@
+body{
+    width: 852px;
+    margin: 10px auto;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    color: #777;
+    font-size: 1.3em;
+}
+#user_score,
+#cp_score,
+#rps_game{
+    display: inline-block;
+    vertical-align: top;
+}
+#user_score,
+#cp_score{
+    width: 290px;
+}
+#rps_game{
+    width: 220px;
+    margin: 50px 20px 0 2px;
+}
+h1{
+    font-weight: lighter;
+    font-size: 1.12em;
+    text-align: center;
+}
+#my_choice,
+#cp_choice{
+    display: inline-block;
+}
+.rps_choice,
+#cp_choice{
+    width: 80px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.rps_choice{
+    background: url(rps_sprite.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+div.rps_rock{
+    background-position: -1px 15px;
+}
+div.rps_paper{
+    background-position: 0 -120px;
+}
+div.rps_scissors{
+    background-position: 0 -51px;
+}
+div.rps_rock_cp{
+    background-position: -106px 15px;
+}
+div.rps_paper_cp{
+    background-position: -105px -120px;
+}
+div.rps_scissors_cp{
+    background-position: -105px -51px;
+}
+.rps_choice:hover{
+    border: 1px solid #dedeff;
+}
+.rps_choice:focus{
+    border:1px solid #777;
+}
+#cp_choice{
+    margin-left: 54px;
+    vertical-align: top;
+}
+#count_box,
+#start_rps{
+    background-color: #fff;
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#start_rps {
+    border: 1px solid #777;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    margin: 10px auto;
+    display: block;
+    color: #777;
+}
+#start_rps:focus{
+    outline: transparent;
+}
+#start_rps:hover{
+    background-color: #dedeff;
+}
+.fifth_mark{
+    position: relative;
+    left: -16px;
+    transform: skewX(54deg);
+    display: inline-block;
+    margin-right: 9px;
+    display: inline-block;
+}
