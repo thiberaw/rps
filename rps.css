@@ -17,7 +17,7 @@ body{
 }
 #rps_game{
     width: 220px;
-    margin: 50px 20px 0 2px;
+    margin: 20px 20px 0 2px;
 }
 h1{
     font-weight: lighter;
@@ -71,7 +71,8 @@ div.rps_scissors_cp{
     vertical-align: top;
 }
 #count_box,
-#start_rps{
+#start_rps,
+#clear_scores{
     background-color: #fff;
     width: 220px;
     height: 40px;
@@ -81,19 +82,21 @@ div.rps_scissors_cp{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-#start_rps {
+#start_rps,
+#clear_scores{
     border: 1px solid #777;
     border-radius: 5px;
     cursor: pointer;
-    width: 120px;
     margin: 10px auto;
     display: block;
     color: #777;
 }
-#start_rps:focus{
+#start_rps:focus,
+#clear_scores:focus{
     outline: transparent;
 }
-#start_rps:hover{
+#start_rps:hover,
+#clear_scores:hover{
     background-color: #dedeff;
 }
 .fifth_mark{

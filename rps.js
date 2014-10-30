@@ -5,6 +5,7 @@ var rps_tab         = document.getElementsByClassName('rps_choice'),
     cp_choice       = document.getElementById('cp_choice'),
     cp_score        = document.getElementById('cp_score'),
     user_score      = document.getElementById('user_score'),
+    clear_scores    = document.getElementById('clear_scores'),
     start_rps       = document.getElementById('start_rps'),
     count_box       = document.getElementById('count_box'),
     count           = 0,
@@ -84,7 +85,7 @@ var rps = {
         if(num % 5 == 0 && num != 0){
             elem.innerHTML += '<span class="fifth_mark">|</span>';
         }else {
-            elem.innerHTML += '<span>|</span>';
+            elem.innerHTML += '|';
         }
     },
     clean: function(){
@@ -103,6 +104,13 @@ function startRps(){
     cp_choice.className = '';
 }
 start_rps.addEventListener('click', startRps, false);
+
+function clearScores(){
+    localStorage.clear();
+    user_score.innerHTML = '';
+    cp_score.innerHTML = '';
+}
+clear_scores.addEventListener('click', clearScores, false);
 
 function timeout(par1,par2,timenum){
     setTimeout(function(){
@@ -125,17 +133,7 @@ for(var i = 0; i < 3; i++){
 
             timeout(false,true,1000);
         }else if(count == 0){
-            var user_win    = rps.getLocalStorage('user_win');
-
-            //point substraction only if user has points
-            if(user_win > 0){
-                count_box.innerText = 'cheater ! (-1)';
-                user_win--;
-                rps.setLocalStorage('user_win',user_win);
-                user_score.removeChild(user_score.childNodes[ user_score.childNodes.length - 1 ]);
-            }else{
-                count_box.innerText = 'cheater !';
-            }
+            count_box.innerText = 'too late';
 
             timeout(true,true,1500);
         }else if(count < 3){
@@ -156,6 +154,6 @@ for(var i = 0; i < 3; i++){
         }
     },false);
 }
-//scores
+//show scores on page load
 rps.writeScore(cp_score,rps.getLocalStorage('cp_win'));
 rps.writeScore(user_score,rps.getLocalStorage('user_win'));
