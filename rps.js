@@ -6,7 +6,8 @@
 
     var rps_tab     = document.getElementsByClassName('rps_choice'),
         cp_choice   = document.getElementById('cp_choice'),
-        count_box   = document.getElementById('count_box');
+        count_box   = document.getElementById('count_box'),
+        rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'];
 
     var rps = {
         getRandInt: function() {
@@ -30,13 +31,6 @@
 
             }
 
-        },
-        setRpsClass: function(num){
-
-            var rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'];
-
-            return rps_class[num-1];
-
         }
     };
 
@@ -49,7 +43,7 @@
 
             var result = user_choice + '' + cp_num;
 
-            cp_choice.className = 'rps_choice ' + rps.setRpsClass(cp_num);
+            cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
             count_box.innerText = rps.getResult(result);
 
         }, false);
