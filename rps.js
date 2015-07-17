@@ -17,33 +17,19 @@
             '33' : 'draw',
             '13' : 'win',
             '21' : 'win',
-            '32' : 'win',
-        };
-
-    var rps = {
-        getRandInt: function() {
-
-            return Math.floor(Math.random() * (4 - 1)) + 1;
-
-        },
-        getResult: function(result){
-
-            return results[result];
-
-        }
+            '32' : 'win'
     };
 
     Array.prototype.forEach.call(rps_tab, function(elem, idx, arr){
 
         elem.addEventListener('click', function(){
 
-            var cp_num = rps.getRandInt();
-            var user_choice = idx + 1;
+            var cp_num = Math.floor(Math.random() * (4 - 1)) + 1;
 
-            var result = user_choice + '' + cp_num;
+            var result = ( idx + 1 ) + '' + ( Math.floor(Math.random() * (4 - 1)) + 1 );
 
             cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
-            count_box.innerText = rps.getResult(result);
+            count_box.innerText = results[result];
 
         }, false);
 
