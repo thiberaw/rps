@@ -3,8 +3,6 @@
  */
 var rps_tab         = document.getElementsByClassName('rps_choice'),
     cp_choice       = document.getElementById('cp_choice'),
-    cp_score        = document.getElementById('cp_score'),
-    user_score      = document.getElementById('user_score'),
     count_box       = document.getElementById('count_box'),
     count           = 0,
     game_on         = 0,
