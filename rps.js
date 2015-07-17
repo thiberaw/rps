@@ -26,7 +26,7 @@
 
             var cp_num = Math.floor(Math.random() * (4 - 1)) + 1;
 
-            var result = ( idx + 1 ) + '' + ( Math.floor(Math.random() * (4 - 1)) + 1 );
+            var result = ( idx + 1 ) + '' + cp_num;
 
             cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
             count_box.innerText = results[result];
