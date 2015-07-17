@@ -5,8 +5,6 @@ var rps_tab         = document.getElementsByClassName('rps_choice'),
     cp_choice       = document.getElementById('cp_choice'),
     cp_score        = document.getElementById('cp_score'),
     user_score      = document.getElementById('user_score'),
-    clear_scores    = document.getElementById('clear_scores'),
-    start_rps       = document.getElementById('start_rps'),
     count_box       = document.getElementById('count_box'),
     count           = 0,
     game_on         = 0,
@@ -96,21 +94,6 @@ var rps = {
         count_box.innerText = '';
     }
 };
-
-function startRps(){
-    rps.clean();
-    game_on = 1;
-    rps.countTime();
-    cp_choice.className = '';
-}
-start_rps.addEventListener('click', startRps, false);
-
-function clearScores(){
-    localStorage.clear();
-    user_score.innerHTML = '';
-    cp_score.innerHTML = '';
-}
-clear_scores.addEventListener('click', clearScores, false);
 
 function timeout(par1,par2,timenum){
     setTimeout(function(){
