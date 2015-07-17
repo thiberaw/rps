@@ -7,7 +7,18 @@
     var rps_tab     = document.getElementsByClassName('rps_choice'),
         cp_choice   = document.getElementById('cp_choice'),
         count_box   = document.getElementById('count_box'),
-        rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'];
+        rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'],
+        results = {
+            '12' : 'lost',
+            '23' : 'lost',
+            '31' : 'lost',
+            '11' : 'draw',
+            '22' : 'draw',
+            '33' : 'draw',
+            '13' : 'win',
+            '21' : 'win',
+            '32' : 'win',
+        };
 
     var rps = {
         getRandInt: function() {
@@ -17,19 +28,7 @@
         },
         getResult: function(result){
 
-            if (result === '12' || result === '23' || result === '31') {
-                
-                return 'lost';
-
-            } else if (result === '13' || result === '21' || result === '32') {
-                
-                return 'win';
-
-            } else {
-                
-                return 'tie game';
-
-            }
+            return results[result];
 
         }
     };
@@ -51,6 +50,3 @@
     });
 
  }());
-
-
-
