@@ -2,11 +2,11 @@ line 1 of some text
 
 another line for some text
 
-line 2 of some text
+add line 2 of some text
 
-line 3 of some text
+add line 3 of some text
 
-line 4 of some text
+#comment line 4 of some text
 
 let's add new line
 
