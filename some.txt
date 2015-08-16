@@ -1,1 +1,3 @@
 line 1 of some text
+
+line 2 of some text
