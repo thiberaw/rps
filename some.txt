@@ -8,5 +8,6 @@ line 3 of some text
 
 line 4 of some text
 
-let's a new line
+let's add new line
 
+maybe the last line for this file ... but who knows ?
