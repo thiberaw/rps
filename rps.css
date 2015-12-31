@@ -33,8 +33,16 @@ h1{
     cursor: pointer;
 }
 div.rps_rock{
-    background-position: -1px 15px;
+    background: #aa00ff;
+    border-radius: 50%;
+    position: relative;
 }
+
+div.rps_rock:before{
+    position: absolute;
+
+}
+
 div.rps_paper{
     background-position: 0 -120px;
 }
