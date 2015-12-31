@@ -1,7 +1,7 @@
 /**
  * Created by thibaut on 22/10/14.
  */
- (function(){
+(function(){
     'use strict';
 
     var rps_tab     = document.getElementsByClassName('rps_choice'),
@@ -20,19 +20,26 @@
             '32' : 'win'
     };
 
+    function setCpScore(){
+        return Math.floor(Math.random() * (4 - 1)) + 1;
+    }
+
+    function displayResult(idx, cp_num){
+        var res = ( idx + 1 ) + '' + cp_num;
+        return results[res];
+    }
+
+    function playGame(idx){
+        var cp_num = setCpScore();
+
+        cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
+        count_box.innerText = displayResult(idx, cp_num); 
+    }
+
     Array.prototype.forEach.call(rps_tab, function(elem, idx, arr){
-
         elem.addEventListener('click', function(){
-
-            var cp_num = Math.floor(Math.random() * (4 - 1)) + 1;
-
-            var result = ( idx + 1 ) + '' + cp_num;
-
-            cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
-            count_box.innerText = results[result];
-
+            playGame(idx)
         }, false);
-
     });
 
  }());
