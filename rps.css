@@ -34,13 +34,32 @@ h1{
 }
 div.rps_rock{
     background: #aa00ff;
-    border-radius: 50%;
+    border-radius: 15px 9px 18px 30px;
     position: relative;
+    height: 39px;
+    width: 51px;
 }
 
-div.rps_rock:before{
-    position: absolute;
+div.rps_rock::before{
+    content: "|||";
+    display: block;
+    color: #fff;
+    font-size: 34px;
+    transform: rotate(90deg) translate(10px, -14px);
+}
 
+div.rps_rock::after{
+    display: block;
+    height: 36px;
+    width: 32px;
+    background: inherit;
+    transform: translate(2px, -42px) rotate(180deg);
+    border-radius: 7px 20px 10px 6px;
+    content: "L";
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 27px;
 }
 
 div.rps_paper{
