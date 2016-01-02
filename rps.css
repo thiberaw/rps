@@ -97,3 +97,14 @@ div.rps_scissors_cp{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+#rps_score span{
+    margin: 2px 3px;
+    display: inline-block;
+}
+
+.fiveBars::after{
+    transform: rotate(330deg) translate(-18px, -11px);
+    display: inline-block;
+    content: "|";
+}
