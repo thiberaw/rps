@@ -30,11 +30,37 @@
         return results[res];
     }
 
+    function classMatch(elem, cName){
+        if(elem.className === cName){
+            return true;
+        }
+        return false;
+    }
+
+    function writeUserScore(res){
+        if(res === 'win'){
+            var elemArrLength = rps_score.childElementCount - 1;
+            var lastElement = rps_score.children[elemArrLength];
+            if(classMatch(lastElement, 'fiveBars')){
+                rps_score.innerHTML += '<span>|</span>';
+            } else {
+                if(lastElement.innerText === '||||'){
+                    lastElement.className = 'fiveBars';
+                }else{
+                    lastElement.innerText += '|';
+                }       
+            }
+        }
+    }
+
     function playGame(idx){
         var cp_num = setCpScore();
+        var result = displayResult(idx, cp_num); 
 
         cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
-        count_box.innerText = displayResult(idx, cp_num); 
+        count_box.innerText = result; 
+        writeUserScore(result);
+
     }
 
     Array.prototype.forEach.call(rps_tab, function(elem, idx, arr){
