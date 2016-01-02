@@ -7,6 +7,7 @@
     var rps_tab     = document.getElementsByClassName('rps_choice'),
         cp_choice   = document.getElementById('cp_choice'),
         count_box   = document.getElementById('count_box'),
+        rps_score   = document.getElementById('rps_score'),
         rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'],
         results = {
             '12' : 'lost',
