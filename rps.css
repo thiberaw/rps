@@ -53,13 +53,13 @@ div.rps_rock::before{
 
 div.rps_rock::after{
     display: block;
-    height: 36px;
+    height: 33px;
     width: 32px;
     background: inherit;
     transform: translate(-1px, -42px) rotate(170deg);
     content: "L";
     color: #fff;
-    font-size: 35px;
+    font-size: 29px;
     text-align: center;
     line-height: 27px;
 }
