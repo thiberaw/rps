@@ -41,15 +41,19 @@
         if(res === 'win'){
             var elemArrLength = rps_score.childElementCount - 1;
             var lastElement = rps_score.children[elemArrLength];
-            if(classMatch(lastElement, 'fiveBars')){
-                rps_score.innerHTML += '<span>|</span>';
+            writeScore(rps_score,lastElement);
+        }
+    }
+
+    function writeScore(playerScore, lastElement){
+        if(classMatch(lastElement, 'fiveBars')){
+            playerScore.innerHTML += '<span>|</span>';
+        } else {
+            if(lastElement.innerText === '||||'){
+                lastElement.className = 'fiveBars';
             } else {
-                if(lastElement.innerText === '||||'){
-                    lastElement.className = 'fiveBars';
-                }else{
-                    lastElement.innerText += '|';
-                }       
-            }
+                lastElement.innerText += '|';
+            }       
         }
     }
 
