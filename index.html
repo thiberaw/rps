@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="rps.css"/>
 </head>
 <body>
-<div id="rps_game">
-<h1>rock beats scissors scissors beat paper paper beats rock</h1>
-    <div id="count_box"></div>
-    <div id="my_choice">
-        <div class="rps_choice rps_rock"></div>
-        <div class="rps_choice rps_paper"></div>
-        <div class="rps_choice rps_scissors"></div>
+    <div class="rps_container">
+        <div id="rps_score"><span></span></div>
+        <div id="rps_game">
+            <h1>rock beats scissors scissors beat paper paper beats rock</h1>
+            <div id="count_box"></div>
+            <div id="my_choice">
+                <div class="rps_choice rps_rock"></div>
+                <div class="rps_choice rps_paper"></div>
+                <div class="rps_choice rps_scissors"></div>
+            </div>
+            <div id="cp_choice" data-rps=""></div>
+        </div>
+        <div id="rps_score_cp"><span></span></div>
     </div>
-    <div id="cp_choice" data-rps=""></div>
-</div>
-<div id="rps_score"><span class="fiveBars">||||</span></div>
-<script src="rps.js"></script>
+    <script src="rps.js"></script>
 </body>
 </html>
