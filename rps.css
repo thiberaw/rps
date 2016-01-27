@@ -13,7 +13,6 @@ body{
 
 #rps_game{
     width: 290px;
-    margin: 20px auto;
 }
 
 h1{
@@ -118,7 +117,7 @@ div.rps_scissors_cp{
     margin-bottom: 10px;
 }
 
-#rps_score span{
+span.fiveBars{
     margin: 2px 3px;
     display: inline-block;
 }
