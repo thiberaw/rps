@@ -6,19 +6,27 @@ body{
     font-size: 1.3em;
     text-transform: uppercase;
 }
+
+.rps_container {
+    display: flex;
+}
+
 #rps_game{
     width: 290px;
     margin: 20px auto;
 }
+
 h1{
     font-weight: lighter;
     font-size: 1.12em;
     text-align: center;
 }
+
 #my_choice,
 #cp_choice{
     display: inline-block;
 }
+
 .rps_choice,
 #cp_choice{
     width: 80px;
@@ -27,11 +35,13 @@ h1{
     box-sizing: border-box;
     margin-bottom: 5px;
 }
+
 .rps_choice{
     background: url(rps_sprite.png);
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
 div.rps_rock{
     background: #777777;
     position: relative;
@@ -67,28 +77,36 @@ div.rps_rock::after{
 div.rps_paper{
     background-position: 0 -120px;
 }
+
 div.rps_scissors{
     background-position: 0 -51px;
 }
+
 div.rps_rock_cp{
     background-position: -106px 15px;
 }
+
 div.rps_paper_cp{
     background-position: -105px -120px;
 }
+
 div.rps_scissors_cp{
     background-position: -105px -51px;
 }
+
 .rps_choice:hover{
     border: 1px solid #dedeff;
 }
+
 .rps_choice:focus{
     border:1px solid #777;
 }
+
 #cp_choice{
     margin-left: 54px;
     vertical-align: top;
 }
+
 #count_box{
     background-color: #fff;
     width: 220px;
