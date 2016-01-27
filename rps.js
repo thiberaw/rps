@@ -8,6 +8,7 @@
         cp_choice   = document.getElementById('cp_choice'),
         count_box   = document.getElementById('count_box'),
         rps_score   = document.getElementById('rps_score'),
+        rps_score_cp= document.getElementById('rps_score_cp'),
         rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'],
         results = {
             '12' : 'lost',
@@ -38,10 +39,18 @@
     }
 
     function writeUserScore(res){
-        if(res === 'win'){
-            var elemArrLength = rps_score.childElementCount - 1;
-            var lastElement = rps_score.children[elemArrLength];
-            writeScore(rps_score,lastElement);
+        if(res !== 'draw'){
+            var elemArrLength, lastElement, winner;
+            
+            if(res === 'win'){
+                winner = rps_score;
+            } else if (res === 'lost'){
+                winner = rps_score_cp;
+            }
+            
+            elemArrLength = winner.childElementCount - 1;
+            lastElement = winner.children[elemArrLength];
+            writeScore(winner,lastElement);
         }
     }
 
