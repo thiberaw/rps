@@ -106,7 +106,7 @@ div.rps_scissors_cp{
 }
 
 .fiveBars::after{
-    transform: rotate(330deg) translate(-18px, -11px);
+    transform: skew(53deg) translate(-17px, 0px) rotate(-54deg);
     display: inline-block;
     content: "|";
 }
