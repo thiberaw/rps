@@ -6,3 +6,8 @@ gulp.task('style', function(){
                    .pipe(autoprefixer())
                    .pipe(gulp.dest('build'))
 });
+
+gulp.task('default', function(){
+    gulp.watch('css/*.css', ['style ']);
+});
+
