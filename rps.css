@@ -113,10 +113,6 @@ div.rps_scissors_cp{
     border:1px solid #777;
 }
 
-#rps_cp-choice{
-    vertical-align: top;
-}
-
 /* Five bars style ----------------------------------------- */
 span.fiveBars{
     margin: 2px 3px;
