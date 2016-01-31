@@ -47,7 +47,7 @@ h1{
 }
 
 .rps_choice{
-    background: url(rps_sprite.png);
+    background: url(../rps_sprite.png);
     background-repeat: no-repeat;
     cursor: pointer;
 }
