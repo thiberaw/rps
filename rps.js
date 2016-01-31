@@ -5,9 +5,9 @@
     'use strict';
 
     var rps_tab     = document.getElementsByClassName('rps_choice'),
-        cp_choice   = document.getElementById('cp_choice'),
-        rps_score   = document.getElementById('rps_score'),
-        rps_score_cp= document.getElementById('rps_score_cp'),
+        rps_cp-choice   = document.getElementById('rps_cp-choice'),
+        rps_user-score   = document.getElementById('rps_user-score'),
+        rps_cp-score= document.getElementById('rps_cp-score'),
         rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'];
 
     function getCpScore(){
@@ -30,9 +30,9 @@
             var winner;
             
             if(res === 1 || res === -2){
-                winner = rps_score;
+                winner = rps_user-score;
             } else {
-                winner = rps_score_cp;
+                winner = rps_cp-score;
             }
             
             callB(winner);            
@@ -57,7 +57,7 @@
         var cp_num = getCpScore();
         var result = getResult(idx, cp_num); 
 
-        cp_choice.className = 'rps_choice ' + rps_class[cp_num - 1];
+        rps_cp-choice.className = 'rps_choice ' + rps_class[cp_num - 1];
         getWinner(result, writeScore);
 
     }

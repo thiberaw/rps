@@ -21,13 +21,14 @@ h1{
     text-align: center;
 }
 
-#my_choice,
-#cp_choice{
-    display: inline-block;
+#rps_user-choice,
+#rps_cp-choice{
+    display: flex;
+    flex-direction: column;
 }
 
 .rps_choice,
-#cp_choice{
+#rps_cp-choice{
     width: 80px;
     height: 70px;
     border: 1px solid #fff;
@@ -41,6 +42,7 @@ h1{
     cursor: pointer;
 }
 
+/* Rock Style ----------------------------------------------- */
 div.rps_rock{
     background: #777777;
     position: relative;
@@ -101,22 +103,12 @@ div.rps_scissors_cp{
     border:1px solid #777;
 }
 
-#cp_choice{
+#rps_cp-choice{
     margin-left: 54px;
     vertical-align: top;
 }
 
-#count_box{
-    background-color: #fff;
-    width: 220px;
-    height: 40px;
-    box-sizing: border-box;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
+/* Five bars style ----------------------------------------- */
 span.fiveBars{
     margin: 2px 3px;
     display: inline-block;
