@@ -36,7 +36,7 @@ h1{
 #rps_cp-choice{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 1 90px;
 }
 
 .rps_choice {
@@ -124,3 +124,4 @@ span.fiveBars{
     display: inline-block;
     content: "|";
 }
+
