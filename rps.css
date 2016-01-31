@@ -39,8 +39,7 @@ h1{
     flex: 1;
 }
 
-.rps_choice,
-#rps_cp-choice{
+.rps_choice {
     width: 80px;
     height: 70px;
     border: 1px solid #fff;

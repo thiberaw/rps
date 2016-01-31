@@ -57,7 +57,7 @@
         var cp_num = getCpScore();
         var result = getResult(idx, cp_num); 
 
-        rps_cpChoice.className = 'rps_choice ' + rps_class[cp_num - 1];
+        rps_cpChoice.firstChild.className = 'rps_choice ' + rps_class[cp_num - 1];
         getWinner(result, writeScore);
 
     }
