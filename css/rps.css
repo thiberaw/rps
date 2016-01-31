@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     margin: 10px auto;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
@@ -11,7 +11,7 @@ body{
     text-transform: capitalize;
 }
 
-h1{
+h1 {
     font-weight: lighter;
     font-size: 1.12em;
     text-align: center;
@@ -27,13 +27,13 @@ h1{
     width: calc(35% - 40px);
 }
 
-#rps_game{
+#rps_game {
     display: flex;
     width: calc(30% - 40px);
 }
 
 #rps_user-choice,
-#rps_cp-choice{
+#rps_cp-choice {
     display: flex;
     flex-direction: column;
     flex: 1 1 90px;
@@ -44,27 +44,25 @@ h1{
     height: 70px;
     border: 1px solid #fff;
     margin: 0 auto 5px;
-}
-
-.rps_choice{
     background: url(../rps_sprite.png);
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 /* Rock Style ----------------------------------------------- */
-div.rps_rock{
+div.rps_rock {
     background: #444493;
     position: relative;
     height: 39px;
     width: 46px;
+    transition: background 0.2s ease;
 }
 
-div.rps_rock:hover{
+div.rps_rock:hover {
     background: #7777ff;
 }
 
-div.rps_rock::before{
+div.rps_rock::before {
     content: "|||";
     display: block;
     color: #fff;
@@ -72,11 +70,11 @@ div.rps_rock::before{
     transform: rotate(90deg) translate(6px, -14px);
 }
 
-div.rps_rock::after{
+div.rps_rock::after {
     display: block;
     height: 33px;
     width: 32px;
-    background: inherit;
+    background-color: inherit;
     transform: translate(-1px, -42px) rotate(170deg);
     content: "L";
     color: #fff;
@@ -85,41 +83,41 @@ div.rps_rock::after{
     line-height: 27px;
 }
 
-div.rps_rock-cp{
+div.rps_rock-cp {
    transform: scaleX(-1); 
 }
 
-div.rps_paper{
+div.rps_paper {
     background-position: 0 -120px;
 }
 
-div.rps_scissors{
+div.rps_scissors {
     background-position: 0 -51px;
 }
 
-div.rps_paper_cp{
+div.rps_paper_cp {
     background-position: -105px -120px;
 }
 
-div.rps_scissors_cp{
+div.rps_scissors_cp {
     background-position: -105px -51px;
 }
 
-.rps_choice:hover{
+.rps_choice:hover {
     border: 1px solid #dedeff;
 }
 
-.rps_choice:focus{
+.rps_choice:focus {
     border:1px solid #777;
 }
 
 /* Five bars style ----------------------------------------- */
-span.fiveBars{
+span.fiveBars {
     margin: 2px 3px;
     display: inline-block;
 }
 
-.fiveBars::after{
+.fiveBars::after {
     transform: skew(53deg) translate(-17px, 0px) rotate(-54deg);
     display: inline-block;
     content: "|";
