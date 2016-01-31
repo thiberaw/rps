@@ -13,6 +13,7 @@ body{
 
 #rps_game{
     width: 290px;
+    display:flex;
 }
 
 h1{
