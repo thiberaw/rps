@@ -19,7 +19,6 @@ h1{
 
 .rps_container {
     display: flex;
-    height: 100vh;
 }
 
 #rps_game,
@@ -50,7 +49,7 @@ h1{
     width: 80px;
     height: 70px;
     border: 1px solid #fff;
-    margin-bottom: 5px;
+    margin: 0 auto 5px;
 }
 
 .rps_choice{
