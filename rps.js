@@ -8,7 +8,8 @@
         rps_cpChoice   = document.getElementById('rps_cp-choice'),
         rps_userScore   = document.getElementById('rps_user-score'),
         rps_cpScore= document.getElementById('rps_cp-score'),
-        rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'];
+        rps_class   = ['rps_rock_cp','rps_paper_cp','rps_scissors_cp'],
+        justify_content = ['flex-start', 'center', 'flex-end'];
 
     function getCpScore(){
         return Math.floor(Math.random() * (4 - 1)) + 1;
@@ -56,7 +57,8 @@
     function playGame(idx){
         var cp_num = getCpScore();
         var result = getResult(idx, cp_num); 
-
+        
+        rps_cpChoice.style = 'justify-content:' + justify_content[idx];
         rps_cpChoice.firstChild.className = 'rps_choice ' + rps_class[cp_num - 1];
         getWinner(result, writeScore);
 
