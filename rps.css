@@ -85,16 +85,17 @@ div.rps_rock::after{
     line-height: 27px;
 }
 
+div.rps_rock-cp{
+   transform: scaleX(-1); 
+}
+
+
 div.rps_paper{
     background-position: 0 -120px;
 }
 
 div.rps_scissors{
     background-position: 0 -51px;
-}
-
-div.rps_rock_cp{
-    background-position: -106px 15px;
 }
 
 div.rps_paper_cp{
