@@ -1,19 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     width: 100%;
     margin: 10px auto;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
     color: #777;
     font-size: 1.3em;
-    text-transform: uppercase;
-}
-
-.rps_container {
-    display: flex;
-}
-
-#rps_game{
-    width: 290px;
-    display:flex;
+    text-transform: capitalize;
 }
 
 h1{
@@ -22,10 +17,32 @@ h1{
     text-align: center;
 }
 
+.rps_container {
+    display: flex;
+    height: 100vh;
+}
+
+#rps_game,
+#rps_user-score,
+#rps_cp-score {
+    margin: 20px;
+}
+
+#rps_user-score,
+#rps_cp-score {
+    width: calc(35% - 40px);
+}
+
+#rps_game{
+    display: flex;
+    width: calc(30% - 40px);
+}
+
 #rps_user-choice,
 #rps_cp-choice{
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .rps_choice,
@@ -33,7 +50,6 @@ h1{
     width: 80px;
     height: 70px;
     border: 1px solid #fff;
-    box-sizing: border-box;
     margin-bottom: 5px;
 }
 
@@ -105,7 +121,6 @@ div.rps_scissors_cp{
 }
 
 #rps_cp-choice{
-    margin-left: 54px;
     vertical-align: top;
 }
 
