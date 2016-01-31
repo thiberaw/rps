@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/thiberaw/rps/issues"
   },
-  "homepage": "https://github.com/thiberaw/rps#readme"
+  "homepage": "https://github.com/thiberaw/rps#readme",
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "3.1.0"
+  }
 }
