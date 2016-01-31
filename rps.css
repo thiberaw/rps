@@ -19,12 +19,7 @@ h1{
 
 .rps_container {
     display: flex;
-}
-
-#rps_game,
-#rps_user-score,
-#rps_cp-score {
-    margin: 20px;
+    justify-content: space-around;
 }
 
 #rps_user-score,
