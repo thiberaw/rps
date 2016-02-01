@@ -104,7 +104,7 @@ div.rps_rock::after {
     line-height: 27px;
 }
 
-div.rps_rock-cp {
+div.rps_cp {
    -webkit-transform: scaleX(-1);
            transform: scaleX(-1); 
 }

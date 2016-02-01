@@ -83,7 +83,7 @@ div.rps_rock::after {
     line-height: 27px;
 }
 
-div.rps_rock-cp {
+div.rps_cp {
    transform: scaleX(-1); 
 }
 

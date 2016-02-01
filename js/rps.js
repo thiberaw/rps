@@ -8,7 +8,7 @@ var rps = (function(){
         rps_cpChoice = document.getElementById('rps_cp-choice'),
         rps_userScore = document.getElementById('rps_user-score'),
         rps_cpScore = document.getElementById('rps_cp-score'),
-        rps_class = ['rps_rock-cp','rps_paper_cp','rps_scissors_cp'],
+        rps_class = ['rps_rock','rps_paper','rps_scissors'],
         justify_content = ['flex-start', 'center', 'flex-end'];
 
     var getCpScore = function (){
@@ -60,7 +60,7 @@ var rps = (function(){
         var result = getResult(idx, cp_num);
         
         rps_cpChoice.style = 'justify-content:' + justify_content[idx];
-        rps_cpChoice.firstChild.className = 'rps_choice ' + cp_class + ' ' + cp_class.slice(0, -3);
+        rps_cpChoice.firstChild.className = 'rps_choice ' + cp_class + ' rps_cp';
         getWinner(result, writeScore);
 
     }
