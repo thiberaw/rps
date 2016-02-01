@@ -1,7 +1,7 @@
 /**
  * Created by thibaut on 22/10/14.
  */
-(function(){
+var rps = (function(){
     'use strict';
 
     var rps_tab = document.getElementsByClassName('rps_choice'),
@@ -11,22 +11,22 @@
         rps_class = ['rps_rock-cp','rps_paper_cp','rps_scissors_cp'],
         justify_content = ['flex-start', 'center', 'flex-end'];
 
-    function getCpScore(){
+    var getCpScore = function (){
         return Math.floor(Math.random() * (4 - 1)) + 1;
     }
 
-    function getResult(idx, cp_num){
+    var getResult = function (idx, cp_num){
         return ( idx + 1 ) - cp_num;
     }
 
-    function classMatch(elem, cName){
+    var classMatch = function (elem, cName){
         if(elem.className === cName){
             return true;
         }
         return false;
     }
 
-    function getWinner(res, callB){
+    var getWinner = function (res, callB){
         if(res !== 0){
             var winner;
             
@@ -40,7 +40,7 @@
         }
     }
 
-    function writeScore(winner){
+    var writeScore = function (winner){
         var lastElem = winner.lastChild;
 
         if(classMatch(lastElem, 'fiveBars')){
@@ -54,7 +54,7 @@
         }
     }
 
-    function playGame(idx){
+    var playGame = function (idx){
         var cp_num = getCpScore();
         var cp_class = rps_class[cp_num - 1];
         var result = getResult(idx, cp_num);
@@ -65,10 +65,17 @@
 
     }
 
-    Array.prototype.forEach.call(rps_tab, function(elem, idx, arr){
-        elem.addEventListener('click', function(){
-            playGame(idx)
-        }, false);
-    });
+    var rpsPlay = function () {
+        Array.prototype.forEach.call(rps_tab, function(elem, idx, arr){
+            elem.addEventListener('click', function(){
+                playGame(idx)
+            }, false);
+        });
+    }
 
+    return {
+        rpsPlay: rpsPlay
+    }
  }());
+
+rps.rpsPlay();
