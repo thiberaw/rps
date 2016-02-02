@@ -58,11 +58,7 @@ h1 {
 }
 
 .rps_choice {
-    width: 80px;
-    height: 70px;
     margin: 21px auto;
-    background: url(../rps_sprite.png);
-    background-repeat: no-repeat;
     cursor: pointer;
 }
 
