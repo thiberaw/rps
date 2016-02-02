@@ -60,7 +60,7 @@ h1 {
 .rps_choice {
     width: 80px;
     height: 70px;
-    margin: 0 auto 30px;
+    margin: 21px auto;
     background: url(../rps_sprite.png);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -103,14 +103,9 @@ div.rps_rock::after {
     line-height: 27px;
 }
 
-div.rps_cp {
-   -webkit-transform: scaleX(-1);
-           transform: scaleX(-1); 
-}
-
 /* Paper Style ----------------------------------------------- */
 div.rps_paper {
-    background: #444493;
+    background: #2FE8A9;
     position: relative;
     height: 37px;
     width: 53px;
@@ -152,6 +147,11 @@ div.rps_scissors {
 
 div.rps_scissors_cp {
     background-position: -105px -51px;
+}
+
+div.rps_cp {
+   -webkit-transform: scaleX(-1);
+           transform: scaleX(-1); 
 }
 
 /* Five bars style ----------------------------------------- */
