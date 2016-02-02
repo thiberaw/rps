@@ -42,8 +42,7 @@ h1 {
 .rps_choice {
     width: 80px;
     height: 70px;
-    border: 1px solid #fff;
-    margin: 0 auto 5px;
+    margin: 0 auto 30px;
     background: url(../rps_sprite.png);
     background-repeat: no-repeat;
     cursor: pointer;
@@ -53,7 +52,7 @@ h1 {
 div.rps_rock {
     background: #444493;
     position: relative;
-    height: 39px;
+    height: 34px;
     width: 46px;
     transition: background 0.2s ease;
 }
@@ -87,28 +86,47 @@ div.rps_cp {
    transform: scaleX(-1); 
 }
 
+/* Paper Style ----------------------------------------------- */
 div.rps_paper {
-    background-position: 0 -120px;
+    background: #444493;
+    position: relative;
+    height: 37px;
+    width: 53px;
+    transition: background 0.2s ease;
 }
 
+div.rps_paper::before {
+    content: "|";
+    background-color: inherit;
+    display: block;
+    color: #fff;
+    font-size: 41px;
+    text-align: center;
+    width: 17px;
+    position: absolute;
+    height: 38px;
+    transform: translate(29px, -2px) rotate(-90deg);
+    border: 3px solid #fff;
+    border-top: 0;
+}
+
+div.rps_paper::after {
+    content: "";
+    background-color: inherit;
+    display: block;
+    height: 9px;
+    width: 37px;
+    border-bottom: 3px solid #fff;
+    transform: translate(0, -10px) rotate(-30deg);
+}
+
+/* Scissors Style ----------------------------------------------- */
 div.rps_scissors {
     background-position: 0 -51px;
 }
 
-div.rps_paper_cp {
-    background-position: -105px -120px;
-}
-
 div.rps_scissors_cp {
     background-position: -105px -51px;
-}
-
-.rps_choice:hover {
-    border: 1px solid #dedeff;
-}
-
-.rps_choice:focus {
-    border:1px solid #777;
 }
 
 /* Five bars style ----------------------------------------- */
