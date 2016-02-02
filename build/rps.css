@@ -66,7 +66,7 @@ h1 {
 div.rps_rock {
     background: #444493;
     position: relative;
-    height: 34px;
+    height: 38px;
     width: 46px;
     -webkit-transition: background 0.2s ease;
     transition: background 0.2s ease;
@@ -81,8 +81,8 @@ div.rps_rock::before {
     display: block;
     color: #fff;
     font-size: 34px;
-    -webkit-transform: rotate(90deg) translate(6px, -14px);
-            transform: rotate(90deg) translate(6px, -14px);
+    -webkit-transform: rotate(90deg) translate(9px, -14px);
+            transform: rotate(90deg) translate(9px, -14px);
 }
 
 div.rps_rock::after {
