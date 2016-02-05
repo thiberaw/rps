@@ -64,8 +64,11 @@ h1 {
 
 /* Rock Style ----------------------------------------------- */
 div.rps_rock {
-    background: #444493;
-    position: relative;
+    position: relative; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #261c96 0%,#261c96 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #261c96 0%,#261c96 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-position: 0;
+    background-size: 200%;
     height: 38px;
     width: 46px;
     -webkit-transition: background 0.2s ease;
