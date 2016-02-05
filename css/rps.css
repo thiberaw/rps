@@ -18,12 +18,12 @@ body {
 
 #rps_user-score,
 #rps_cp-score {
-    width: calc(35% - 40px);
+    width: calc(30% - 40px);
 }
 
 #rps_game {
     display: flex;
-    width: calc(30% - 40px);
+    width: calc(40% - 40px);
     justify-content: space-between;
 }
 
@@ -33,11 +33,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 225px;
+    width: 50%;
 }
 
 .rps_choice {
     cursor: pointer;
     border-radius: 3px;
+    margin: 0 auto;
 }
 
 .rps_choice::after,
@@ -53,6 +55,7 @@ div.rps_rock {
     background-size: 200%;
     height: 38px;
     width: 40px;
+    transform: translate(5px, 0);
     transition: background 0.2s ease;
 }
 
