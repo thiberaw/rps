@@ -4,17 +4,11 @@
 
 body {
     width: 100%;
-    margin: 10px auto;
+    margin: 10% auto;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
     color: #777;
     font-size: 1.3em;
     text-transform: capitalize;
-}
-
-h1 {
-    font-weight: lighter;
-    font-size: 1.12em;
-    text-align: center;
 }
 
 .rps_container {
