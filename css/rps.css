@@ -65,15 +65,16 @@ div.rps_rock::before {
     content: "|||";
     display: block;
     color: #fff;
-    font-size: 34px;
-    transform: rotate(90deg) translate(9px, -14px);
+    font-size: 32px;
+    transform: translate(18px, 10px) rotate(90deg);
+    letter-spacing: 0.05rem;
 }
 
 div.rps_rock::after {
     display: block;
     height: 33px;
     width: 32px;
-    transform: translate(-5px, -43px) rotate(135deg);
+    transform: translate(-6px, -41px) rotate(225deg);
     content: "L";
     color: #fff;
     font-size: 29px;
