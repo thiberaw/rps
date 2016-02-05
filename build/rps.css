@@ -123,19 +123,19 @@ div.rps_paper {
 }
 
 div.rps_paper::before {
-    content: "|";
+    content: "|||";
     background-color: inherit;
     display: block;
     color: #fff;
-    font-size: 41px;
-    text-align: center;
-    width: 17px;
+    font-size: 35px;
+    width: 18px;
     position: absolute;
-    height: 38px;
-    -webkit-transform: translate(29px, -2px) rotate(-90deg);
-            transform: translate(29px, -2px) rotate(-90deg);
-    border: 3px solid #fff;
-    border-top: 0;
+    height: 49px;
+    -webkit-transform: translate(26px, -6px) rotate(-90deg);
+            transform: translate(26px, -6px) rotate(-90deg);
+    letter-spacing: 0.06rem;
+    line-height: 63px;
+    text-indent: -6px;
 }
 
 div.rps_paper::after {
