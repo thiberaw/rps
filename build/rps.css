@@ -70,7 +70,7 @@ div.rps_rock {
     background-position: 0 0;
     background-size: 200%;
     height: 38px;
-    width: 46px;
+    width: 40px;
     -webkit-transition: background 0.2s ease;
     transition: background 0.2s ease;
 }
@@ -84,8 +84,8 @@ div.rps_rock::before {
     display: block;
     color: #fff;
     font-size: 32px;
-    -webkit-transform: translate(18px, 10px) rotate(90deg);
-            transform: translate(18px, 10px) rotate(90deg);
+    -webkit-transform: translate(20px, 7px) rotate(90deg);
+            transform: translate(20px, 7px) rotate(90deg);
     letter-spacing: 0.05rem;
 }
 
