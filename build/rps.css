@@ -58,10 +58,10 @@ body {
 
 /* Rock Style ----------------------------------------------- */
 div.rps_rock {
-    position: relative; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background-position: 0 0;
+    position: relative;
+    background: -webkit-linear-gradient(top,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%);
+    background: linear-gradient(to bottom,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); 
+    background-position: 0 -100%;
     background-size: 200%;
     height: 38px;
     width: 40px;
@@ -70,7 +70,7 @@ div.rps_rock {
 }
 
 div.rps_rock:hover {
-    background-position: 0 -100%;
+    background-position: 0 0;
 }
 
 div.rps_rock::before {
@@ -93,17 +93,17 @@ div.rps_rock::after {
     color: #fff;
     font-size: 29px;
     text-align: center;
-    line-height: 27px; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    line-height: 27px;
+    background: -webkit-linear-gradient(top,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%);
+    background: linear-gradient(to bottom,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); 
     background-size: 200%;
-    background-position: 0 0;
+    background-position: 0 -100%;
     -webkit-transition: background 0.2s ease;
     transition: background 0.2s ease;
 }
 
 div.rps_rock:hover::after{
-    background-position: 0 -100%;
+    background-position: 0 0;
 }
 
 /* Paper Style ----------------------------------------------- */
@@ -180,6 +180,7 @@ div.rps_scissors::after {
     line-height: 35px;
 }
 
+/* cp ------------------------------------------------------ */
 div.rps_cp {
    -webkit-transform: scaleX(-1);
            transform: scaleX(-1); 
