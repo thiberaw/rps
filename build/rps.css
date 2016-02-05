@@ -65,8 +65,8 @@ h1 {
 /* Rock Style ----------------------------------------------- */
 div.rps_rock {
     position: relative; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #261c96 0%,#261c96 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #261c96 0%,#261c96 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(top,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-position: 0 0;
     background-size: 200%;
     height: 38px;
@@ -92,15 +92,15 @@ div.rps_rock::after {
     display: block;
     height: 33px;
     width: 32px;
-    -webkit-transform: translate(-1px, -42px) rotate(170deg);
-            transform: translate(-1px, -42px) rotate(170deg);
+    -webkit-transform: translate(-5px, -43px) rotate(135deg);
+            transform: translate(-5px, -43px) rotate(135deg);
     content: "L";
     color: #fff;
     font-size: 29px;
     text-align: center;
     line-height: 27px; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #261c96 0%,#261c96 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #261c96 0%,#261c96 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(top,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000b4c 0%,#000b4c 49%,#0082e5 50%,#0082e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-size: 200%;
     background-position: 0 0;
     -webkit-transition: background 0.2s ease;
