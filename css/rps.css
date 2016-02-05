@@ -94,16 +94,26 @@ div.rps_rock:hover::after{
 
 /* Paper Style ----------------------------------------------- */
 div.rps_paper {
-    background: #2FE8A9;
+    background: linear-gradient(to right,  #115438 0%,#115438 49%,#2fe8a9 50%,#2fe8a9 100%); 
+    background-position: -100%;
+    background-size: 200%;
     position: relative;
     height: 37px;
     width: 53px;
     transition: background 0.2s ease;
 }
 
+div.rps_paper:hover::before,
+div.rps_paper:hover::after,
+div.rps_paper:hover {
+    background-position: 0;
+}
+
 div.rps_paper::before {
     content: "|||";
-    background-color: inherit;
+    background: linear-gradient(to right,  #115438 0%,#115438 49%,#2fe8a9 50%,#2fe8a9 100%); 
+    background-position: -100%;
+    background-size: 200%;
     display: block;
     color: #fff;
     font-size: 35px;
@@ -118,7 +128,9 @@ div.rps_paper::before {
 
 div.rps_paper::after {
     content: "|";
-    background-color: inherit;
+    background: linear-gradient(to right,  #115438 0%,#115438 49%,#2fe8a9 50%,#2fe8a9 100%); 
+    background-position: -100%;
+    background-size: 200%;
     display: block;
     height: 36px;
     width: 10px;
