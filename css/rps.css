@@ -114,13 +114,16 @@ div.rps_paper::before {
 }
 
 div.rps_paper::after {
-    content: "";
+    content: "|";
     background-color: inherit;
     display: block;
-    height: 9px;
-    width: 37px;
-    border-bottom: 3px solid #fff;
-    transform: translate(0, -10px) rotate(-30deg);
+    height: 36px;
+    width: 10px;
+    transform: translate(13px, -21px) rotate(-106deg);
+    font-size: 31px;
+    color: #fff;
+    line-height: 43px;
+    text-indent: -5px;
 }
 
 /* Scissors Style ----------------------------------------------- */
