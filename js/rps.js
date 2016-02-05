@@ -61,8 +61,9 @@ var rps = (function(){
         
         rps_cpChoice.style = 'justify-content:' + justify_content[idx];
         rps_cpChoice.firstChild.className = 'rps_choice ' + cp_class + ' rps_cp';
-        getWinner(result, writeScore);
+        rps_cpChoice.firstChild.innerText = cp_num === 3 ? '||' : '';
 
+        getWinner(result, writeScore);
     }
 
     var rpsPlay = function () {
