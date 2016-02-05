@@ -32,6 +32,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: calc(30% - 40px);
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #rps_user-choice,
@@ -45,14 +49,14 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 90px;
-        -ms-flex: 1 1 90px;
-            flex: 1 1 90px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 225px;
 }
 
 .rps_choice {
-    margin: 21px auto;
     cursor: pointer;
     border-radius: 3px;
 }

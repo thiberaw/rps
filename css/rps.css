@@ -24,17 +24,18 @@ body {
 #rps_game {
     display: flex;
     width: calc(30% - 40px);
+    justify-content: space-between;
 }
 
 #rps_user-choice,
 #rps_cp-choice {
     display: flex;
     flex-direction: column;
-    flex: 1 1 90px;
+    justify-content: space-between;
+    height: 225px;
 }
 
 .rps_choice {
-    margin: 21px auto;
     cursor: pointer;
     border-radius: 3px;
 }
