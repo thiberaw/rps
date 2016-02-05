@@ -54,6 +54,12 @@ body {
 .rps_choice {
     margin: 21px auto;
     cursor: pointer;
+    border-radius: 3px;
+}
+
+.rps_choice::after,
+.rps_choice::before {
+    border-radius: 3px;
 }
 
 /* Rock Style ----------------------------------------------- */
