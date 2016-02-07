@@ -118,12 +118,12 @@ div.rps_paper::before {
     color: #fff;
     font-size: 35px;
     width: 18px;
-    position: absolute;
     height: 49px;
     transform: translate(26px, -6px) rotate(-90deg);
     letter-spacing: 0.06rem;
     line-height: 63px;
     text-indent: -6px;
+    transition: background 0.2s ease;
 }
 
 div.rps_paper::after {
@@ -134,11 +134,12 @@ div.rps_paper::after {
     display: block;
     height: 36px;
     width: 10px;
-    transform: translate(13px, -21px) rotate(-106deg);
+    transform: translate(13px, -70px) rotate(-106deg);
     font-size: 31px;
     color: #fff;
     line-height: 43px;
     text-indent: -5px;
+    transition: background 0.2s ease;
 }
 
 /* Scissors Style ----------------------------------------------- */
