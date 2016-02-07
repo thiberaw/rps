@@ -154,6 +154,10 @@ div.rps_scissors {
     text-indent: 4px;
     line-height: 2px;
     letter-spacing: 0.09rem;
+    background: linear-gradient(to right, #54384a 0%,#54384a 49%,#ffaada 50%,#ffaada 100%);
+    background-size: 201%;
+    background-position: -100%;
+    transition: background 0.2s ease;
 }
 
 div.rps_scissors::after,
@@ -165,15 +169,25 @@ div.rps_scissors::before {
     position: absolute;
     display: block;
     color: inherit;
+    background: linear-gradient(to right, #54384a 0%,#54384a 49%,#ffaada 50%,#ffaada 100%);
+    background-size: 201%;
+    background-position: -99%;
+    transition: background 0.2s ease;
 }
 
 div.rps_scissors::after {
-    transform: translate(-26px, -5px) rotate(66deg);
+    transform: translate(-26px, -5px) rotate(246deg);
 }
 
 div.rps_scissors::before {
-    transform: translate(-39px, 7px) rotate(48deg);
+    transform: translate(-39px, 7px) rotate(228deg);
     width: 53px;
+}
+
+div.rps_scissors:hover,
+div.rps_scissors:hover::before,
+div.rps_scissors:hover::after {
+    background-position: 0;
 }
 
 /* cp ------------------------------------------------------ */
