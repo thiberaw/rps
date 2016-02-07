@@ -1,6 +1,6 @@
 {
   "name": "rps",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "rock paper scissors game",
   "main": "js/rps.js",
   "scripts": {
