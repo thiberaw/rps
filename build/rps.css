@@ -244,6 +244,18 @@ div.rps_cp.rps_scissors {
             transform: scaleX(-1) rotate(120deg);
 }
 
+div.rps_cp.rps_rock,
+div.rps_cp.rps_rock::before,
+div.rps_cp.rps_rock::after,
+div.rps_cp.rps_paper,
+div.rps_cp.rps_paper::before,
+div.rps_cp.rps_paper::after,
+div.rps_cp.rps_scissors,
+div.rps_cp.rps_scissors::before,
+div.rps_cp.rps_scissors::after {
+    -webkit-transition: none;
+    transition: none;
+}
 /* Five bars style ----------------------------------------- */
 span.fiveBars {
     margin: 2px 3px;
