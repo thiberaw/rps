@@ -212,25 +212,32 @@ div.rps_scissors::before {
     background: linear-gradient(to right, #54384a 0%,#54384a 49%,#ffaada 50%,#ffaada 100%);
     background-size: 201%;
     background-position: -99%;
-    -webkit-transition: background 0.2s ease;
-    transition: background 0.2s ease;
+    -webkit-transition: 0;
+    transition: 0;
 }
 
 div.rps_scissors::after {
-    -webkit-transform: translate(-26px, -5px) rotate(246deg);
-            transform: translate(-26px, -5px) rotate(246deg);
+    -webkit-transform: translate(-26px, -5px) rotate(66deg);
+            transform: translate(-26px, -5px) rotate(66deg);
 }
 
 div.rps_scissors::before {
-    -webkit-transform: translate(-39px, 7px) rotate(228deg);
-            transform: translate(-39px, 7px) rotate(228deg);
+    -webkit-transform: translate(-39px, 7px) rotate(48deg);
+            transform: translate(-39px, 7px) rotate(48deg);
     width: 53px;
 }
 
-div.rps_scissors:hover,
+div.rps_scissors:hover {
+    background-position: 0;
+    -webkit-transition: background 0.14s ease;
+    transition: background 0.14s ease;
+}
+
 div.rps_scissors:hover::before,
 div.rps_scissors:hover::after {
     background-position: 0;
+    -webkit-transition: background 0.14s ease 0.06s;
+    transition: background 0.14s ease 0.06s;
 }
 
 /* cp ------------------------------------------------------ */
