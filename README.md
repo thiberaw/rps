@@ -1,9 +1,7 @@
-rps
-===
+#RockPaperScissors game in javascript
 
-RockPaperScissors game in javascript
-
-
-practicing GIT !!
-and some git pratice
-git pratice ... pratice & pratice
+1. CSS practice !!!
+2. GIT practice !!
+3. GULP learning !
+4. JAVASCRIPT practice !!!!
+5. VIM practice !!!!!
